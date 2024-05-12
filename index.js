@@ -90,7 +90,6 @@ app.post('/api/persons', (req, res) => {
   const personExisted = persons.find(
     (person) => person.name === personObj.name
   );
-  console.log(personExisted);
 
   if (!name | !number) {
     return res.status(400).json({ error: 'name or number is missing!' });
